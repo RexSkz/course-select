@@ -50,12 +50,12 @@
 				$course = mysql_fetch_array($course);
 				$i++;
 				if ($i % 2 == 0) {
-					$hightlight = " style=\"background-color:#DDD;\"";
+					$highlight = " style=\"background-color:#DDD;\"";
 				}
 				else {
-					$hightlight = " style=\"background-color:#EEE;\"";
+					$highlight = " style=\"background-color:#EEE;\"";
 				}
-				echo "<tr" . $hightlight . ">";
+				echo "<tr" . $highlight . ">";
 				echo '<td><input class="hideborder" type="checkbox" name="chk[]" value="' . $course['id'] . '" /></td>';
 				echo "<td>" . $course['id'] . "</td>";
 				echo "<td>" . $course['name'] . "</td>";

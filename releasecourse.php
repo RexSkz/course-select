@@ -66,12 +66,12 @@
 						for ($i = 0; $i < 5; ++$i) {
 							$k++;
 							if ($k % 2 == 0) {
-								$hightlight = " style=\"background-color:#DDD;\"";
+								$highlight = " style=\"background-color:#DDD;\"";
 							}
 							else {
-								$hightlight = " style=\"background-color:#EEE;\"";
+								$highlight = " style=\"background-color:#EEE;\"";
 							}
-							echo "<tr" . $hightlight . ">";
+							echo "<tr" . $highlight . ">";
 							echo "<td>第" . ($i + 1) . "节</td>";
 							for ($j = 0; $j < 5; ++$j) {
 								echo '<td>';

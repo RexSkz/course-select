@@ -37,7 +37,8 @@
 <ul>
 	<li><a href="index.php?page=selectcourse">进入选课</a></li>
 	<li><a href="index.php?page=selectedcourse">已选课程</a></li>
-	<li>班级课表</li>
+	<li><a href="index.php?page=coursetablestudent">我的课表</a></li>
+	<li><a href="index.php?page=myscore">我的成绩</a></li>
 	<li><a href="index.php?page=changepassword&type=student">修改密码</a></li>
 	<li><a href="logout.php">退出系统</a></li>
 </ul>

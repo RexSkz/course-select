@@ -29,9 +29,8 @@
 				$course = mysql_query("SELECT * FROM coursechoose WHERE id='" . $user . "' AND courseID='" . $checklist['id'] . "'");
 				if (mysql_fetch_array($course) == NULL) {
 					$flag = mysql_query("INSERT INTO coursechoose VALUES ('" . $user . "', '" . $stu['name'] .
-						"', '" . $stu['dept'] . "', '" . $stu['major'] . "', '" . $stu['class'] . "', '" .
-						$checklist['name'] . "', '" . $checklist['id'] . "', '" . $checklist['teacherID'] .
-						"', NULL)");
+						"', '" . $checklist['name'] . "', '" . $checklist['id'] . "', '" .
+						$checklist['teacherID'] . "', '0', NULL)");
 					if ($flag == true) {
 						$checklist = mysql_query("SELECT selectedNumber FROM courseinformation WHERE id='" . $e . "'");
 						$checklist = mysql_fetch_array($checklist);
@@ -72,12 +71,12 @@
 					if (mysql_fetch_array($choose) == NULL) {
 						$i++;
 						if ($i % 2 == 0) {
-							$hightlight = " style=\"background-color:#DDD;\"";
+							$highlight = " style=\"background-color:#DDD;\"";
 						}
 						else {
-							$hightlight = " style=\"background-color:#EEE;\"";
+							$highlight = " style=\"background-color:#EEE;\"";
 						}
-						echo "<tr" . $hightlight . ">";
+						echo "<tr" . $highlight . ">";
 						echo "<td>";
 						echo '<input class="hideborder" type="checkbox" name="chk[]" value="' . $row['id'] . '" checked=1 />';
 						echo '</td>';
@@ -116,12 +115,12 @@
 					if (mysql_fetch_array($choose) == NULL) {
 						$i++;
 						if ($i % 2 == 0) {
-							$hightlight = " style=\"background-color:#DDD;\"";
+							$highlight = " style=\"background-color:#DDD;\"";
 						}
 						else {
-							$hightlight = " style=\"background-color:#EEE;\"";
+							$highlight = " style=\"background-color:#EEE;\"";
 						}
-						echo "<tr" . $hightlight . ">";
+						echo "<tr" . $highlight . ">";
 						echo '<td><input class="hideborder" type="checkbox" name="chk[]" value="' . $row['id'] . '" /></td>';
 						echo "<td>" . $row['id'] . "</td>";
 						echo "<td>" . $row['name'] . "</td>";

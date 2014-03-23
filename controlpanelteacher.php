@@ -32,7 +32,7 @@
 <ul>
 	<li><a href="index.php?page=releasecourse">发布课程</a></li>
 	<li><a href="index.php?page=showcourse">查看课程</a></li>
-	<li><a href="index.php?page=showcoursetable">上课课表</a></li>
+	<li><a href="index.php?page=coursetableteacher">上课课表</a></li>
 	<li><a href="index.php?page=studentscore">学生成绩</a></li>
 	<li><a href="index.php?page=changepassword&type=teacher">修改密码</a></li>
 	<li><a href="logout.php">退出系统</a></li>
